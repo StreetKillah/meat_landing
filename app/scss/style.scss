@@ -1,0 +1,107 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;    
+}
+
+ul{
+    list-style: none;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #ffff;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.17em;
+
+}
+
+/*--------------------------------------------------------П Е Р В Ы Й  Э К Р А Н---------------------------------------------------------------*/
+
+.header{
+    background-image: url('../img/bg.png');
+    background-size: cover;
+}
+
+.main_screen{
+    margin: 0px 66px;
+    display: flex;
+    flex-direction: column;
+}
+
+.knife{
+    position: absolute;
+    margin: 77px -5px;
+}
+
+.navbar{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+}
+
+.nav_menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 78px;
+    margin-left: 66px;
+}
+.nav_list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_buttons{
+    margin-left: 239px;
+    display: flex;
+}
+.nav_buttons img:nth-child(2){
+    margin-left: 16px;
+}
+
+.main_typo{
+    display: flex;
+    flex-direction: column;
+    margin: 125px 204px;
+    span:nth-child(1){
+        font-family: BERNIER Distressed;
+        font-size: 79px;
+        line-height: 96px;
+        color: #ED3A36;
+    }
+    span:nth-child(2){
+        margin-top: 60px;
+        font-family: Bebas Neue;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 42px;
+        letter-spacing: 0.09em;
+        color: #ffff;
+    }
+    input[type=button]{
+        margin-top: 63px;
+        background: linear-gradient(102.48deg, #BE2623 0%, #FF413E 100%);
+        box-shadow: 0px 23px 23px rgba(0, 0, 0, 0.53);
+        width: 350px;
+        height: 86px;
+        font-family: 'Gilroy Bold', sans-serif;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 29px;
+        color: white;
+        border: none;
+    }
+}
+
+
+
+
+
+@import "media";
