@@ -11,29 +11,66 @@ body{
 ul{
     list-style: none;
     font-family: 'Bebas Neue', sans-serif;
+    font-weight: 600;
     color: #ffff;
-    font-size: 24px;
+    font-size: 1vw;
     line-height: 24px;
     letter-spacing: 0.17em;
-
 }
+
+a{
+    text-decoration: none;
+}
+a,a:visited,a:active{
+    color: #ffff;
+    
+}
+
 
 /*--------------------------------------------------------П Е Р В Ы Й  Э К Р А Н---------------------------------------------------------------*/
 
 .header{
-    background-image: url('../img/bg.png');
+    background-image: url('../img/bg1.png');
     background-size: cover;
+    background-position: center;
 }
 
 .main_screen{
-    margin: 0px 66px;
+    margin: 0px 3%;
     display: flex;
     flex-direction: column;
 }
 
-.knife{
+// .knife, .grill, .chili, .piece{
+//     max-width: 100%;
+// }
+
+// .knife{
+//     position: absolute;
+//     margin: 5% -5px;
+// }
+
+// .grill{
+//     position: absolute;
+//     margin: 5% 62%;
+// }
+
+// .chili{
+//     position: absolute;
+//     margin: 33% 1%;
+// }
+
+// .piece{
+//     position: absolute;
+//     margin: 27% 85%;
+// }
+
+.cloud{
     position: absolute;
-    margin: 77px -5px;
+    margin: 24% 57%;
+    img{
+        max-width: 100%;
+    }
 }
 
 .navbar{
@@ -68,11 +105,11 @@ ul{
 .main_typo{
     display: flex;
     flex-direction: column;
-    margin: 125px 204px;
+    margin: 6.2vw 204px;
     span:nth-child(1){
         font-family: BERNIER Distressed;
-        font-size: 79px;
-        line-height: 96px;
+        font-size: 5vw;
+        line-height: 5vw;
         color: #ED3A36;
     }
     span:nth-child(2){
@@ -80,7 +117,7 @@ ul{
         font-family: Bebas Neue;
         font-style: normal;
         font-weight: normal;
-        font-size: 30px;
+        font-size: 1.5vw;
         line-height: 42px;
         letter-spacing: 0.09em;
         color: #ffff;
@@ -93,11 +130,157 @@ ul{
         height: 86px;
         font-family: 'Gilroy Bold', sans-serif;
         font-weight: 800;
-        font-size: 24px;
+        font-size: 1vw;
         line-height: 29px;
         color: white;
         border: none;
+        cursor: pointer;
     }
+    input[type=button]:active,
+    input[type=button]:focus,
+    input[type=button]
+    {
+        outline: 0;
+        outline-offset: 0;
+    }
+}
+
+
+/*------------------------------------------------------------------О  Н А С----------------------------------------------------------------*/
+
+.about{
+    background-image: url('../img/bg2.png');
+    background-size: 100% auto;
+    font-family: 'Bebas Neue', sans-serif;
+    
+}
+
+.about_wrapper{
+    max-width: 74vw;
+    margin-left: 13%;
+    display: flex;
+    flex-direction: column;
+    .about_us{
+        text-align: center;
+    }
+}
+
+
+
+.about_wrapper span{
+    font-family: 'BERNIER Distressed', sans-serif;
+    color: #ED3A36;
+    font-size: 5vw;
+    letter-spacing: 0.1em;
+}
+
+.about_image{
+    max-width: 35vw;
+    max-height: 36vw;
+    margin-top: 2%;   
+}
+
+.about_typo{
+    margin-left: 2.7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    span:nth-child(1){
+        font-family: 'Bebas Neue', sans-serif;
+        letter-spacing: 0;
+        .colorized{
+            color: #ED3A36;
+            font-size: 3.3vw;
+        }
+    }
+  
+
+}
+
+
+.about_content{
+    margin: 7% 0;
+    display: flex;
+    .about_typo span{   
+        color: #ffff;
+        font-size: 1.8vw;
+    }
+    .about_typo .about_text{
+        display: flex;
+        flex-direction: column;
+        letter-spacing: 0;
+        span{
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1vw;
+            line-height: 1.8vw;
+            color: #ffff;
+        }
+        span:nth-child(3){
+            color: #ED3A36;
+            margin-top: 2.8vw;
+         }
+         span:nth-child(2){
+             margin-top: 2.8vw;
+         }
+         span:nth-child(4){
+            margin-top: 2.8vw;
+        }
+        span:nth-child(5){
+            margin-top: 2vw;
+        }
+    }
+}
+
+.green{
+    position: absolute;
+    margin-top: -10vw;
+
+}
+
+/*-----------------------------------------------------------П Р О Д У К Ц И Я---------------------------------------------------------------*/
+
+.production{
+    background-image: url('../img/bg.png');
+    background-size: 100% 100%;
+}
+
+.production_wrapper{
+    margin: 0 auto;
+    width: 74vw;
+    .production_title{
+        text-align: center;
+        span{
+        font-family: BERNIER Regular, sans-serif;
+        font-size: 5vw;
+        color: #ED3A36;
+        }
+    }
+    .prod_list{
+        max-width: 61.4vw;
+        font-family: Bebas Neue, sans-serif;
+        color: #ED3A36;;
+        font-size: 1.8vw;
+        display: flex;
+        .list_button{
+            text-align: center;
+            border: 1px solid #FFFFFF;
+            box-sizing: border-box;
+            border-radius: 10px;
+            border-color: #ffff;
+            width: 11.4vw;
+            height: 2.9vw;
+            line-height: 97%;
+            letter-spacing: 0.155em;
+            cursor: pointer;
+        }
+
+        .list_button:focus,
+        .list_button:hover{
+            background: linear-gradient(97.95deg, #BE2623 0%, #FF413E 100%);
+            color: #FFFFFF;
+        }
+    }
+    
 }
 
 
